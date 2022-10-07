@@ -80,7 +80,24 @@ class List {
 
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args)
+    {
+        List l = new List();
+        for(int i = 0; i<=100; i++){
+            l.add_back(i);
+        }
+
+        l.print_all();
+
+        l.add_back(123);
+        l.add_back(123);
+
+        l.add_front(-1);
+        l.add_front(-10);
+
+        l.del_elem(2);
+        l.del_elem(11);
+
+        l.print_all();
     }
 }
